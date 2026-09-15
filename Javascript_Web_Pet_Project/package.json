@@ -1,0 +1,25 @@
+{
+  "name": "javascript_web_pet_project",
+  "version": "1.0.0",
+  "description": "Fetches repository stats (stars, last updated) from GitHub's Stack Builders organization",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
+    "test:coverage": "node --experimental-vm-modules node_modules/.bin/jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "jest": "^30.5.1"
+  },
+  "jest": {
+    "transform": {}
+  }
+}
+
