@@ -1,6 +1,10 @@
 export default async function fetchGitHubRepos(orgName, fetchFn = fetch) {
-  
-  const url = `https://api.github.com/orgs/${orgName}/repos?per_page=100`;
+  const params = new URLSearchParams({
+    per_page: '100',
+    type: 'public',
+    sort: 'updated',
+  });
+  const url = `https://api.github.com/orgs/${orgName}/repos?${params.toString()}`;
   const response = await fetchFn(url);
 
   if (!response.ok) {
