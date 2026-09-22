@@ -1,0 +1,30 @@
+{
+  "name": "typescript_web_pet_project",
+  "version": "1.0.0",
+  "description": "TypeScript migration of the GitHub Stack Builders org stats app, with a layered (controller/service/repository) architecture",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/server.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "ts-jest": "^29.4.12",
+    "jest": "^30.5.2",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^26.6.2",
+    "@types/express": "^5.0.6"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  }
+}
